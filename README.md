@@ -14,3 +14,11 @@ A simple example of integration of NodeJS application with Gitlab CI and Heroku 
 - `BASE_LIVE_URL` : URL to your Heroku environment (full URL including https://)
 
 5. Push your code, go to Gitlab CI/CD and press a button to deploy to Heroku. 
+
+6. Note that Heroku should automatically choose "Node JS" buildpack.
+
+7. Once the deployment is complete (check Heroku logs too, not only Gitlab) application should restart and start. Visit the main URL to see 'Hello World!' text.
+
+## How to start
+
+Heroku launches `npm start` automatically in a free mode, once the package is deployed. You can run this command to execute a simple Express server with 'Hello World!' text.
