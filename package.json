@@ -1,0 +1,23 @@
+{
+  "name": "gitlab-heroku-node-boilerplate",
+  "version": "1.0.0",
+  "description": "Gitlab + Heroku + NodeJS + ExpressJS boilerplate for quick deployment and delivery.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/gwozniak/gitlab-heroku-node-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/gwozniak/gitlab-heroku-node-boilerplate/issues"
+  },
+  "homepage": "https://gitlab.com/gwozniak/gitlab-heroku-node-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

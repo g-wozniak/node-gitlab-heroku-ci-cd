@@ -1,0 +1,16 @@
+stages:
+  - deploy
+
+deploy_heroku:
+  image: node:10
+  stage: deploy
+  script:
+    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_REPO_NAME.git
+    - git push -f heroku HEAD:master
+    - echo "Deployed to Heroku"
+  environment:
+    name: production
+    url: $BASE_LIVE_URL/
+  when: manual
+  only:
+    - master
